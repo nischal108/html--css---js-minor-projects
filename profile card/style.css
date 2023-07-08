@@ -1,0 +1,151 @@
+/* import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+
+/* umiversal css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* placed the card at the centre */
+
+
+body{
+    background-color: rgba(172, 119, 223, 0.459);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    /* profile card */
+
+.profile-card{
+      width: 340px;
+      height: 480px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border-radius: 34px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
+
+}
+            /* profile image */
+
+
+.profile-image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.profile-image .photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+
+ /* name , designation and information */
+
+.profile-card .name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.profile-card .name .myname{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.profile-card .name .whoami{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.name .info{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+/* email */
+
+
+.name .email{
+    width: 210px;
+    height: 35px;
+    background-color: #4070f4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
+}
+.name .email:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.49);
+}
+.email span{
+    color: white;
+    font-size: 15px;
+}
+
+
+
+/* social media icons */
+
+
+.social{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.social a{
+    text-decoration: none;
+}
+
+.social i{
+    font-size: 24px;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4070f4;
+    margin: 0px 8px;
+}
+
+.social i:hover{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.29);
+}
