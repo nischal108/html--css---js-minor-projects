@@ -95,7 +95,8 @@ main{
 }
 
 .gallery_images_more {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 0.8rem;
     margin-top: 0.8rem;
 }
@@ -116,7 +117,7 @@ gallery-info p{
 
 /* media queries */
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
     body{
         display: block;
         padding: 2rem 1rem 4rem;
