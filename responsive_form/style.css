@@ -62,11 +62,14 @@ img{
 
 h1{
     color: var(--color_black);
-    font-size: 2rem;
+    fontt-size: 2rem;
     margin-bottom: 0.3rem;
 }
 
-
+a, a:active, a:visited{
+    font-weight: 500;
+    color: var(--color_black)
+}
 
 /*     styling all buttons */
 .btn{
@@ -77,4 +80,94 @@ h1{
     padding: 0.8rem 1.5rem;
     border-radius: 0.5rem;
     cursor: pointer;
+    transition: var(--transition);
+}
+.primary_btn{
+    background: var(--color_primary);
+    color: var(--color-white);
+}
+
+.btn:hover{
+    background: var(--color_black);
+    color: var(--color-white);
+
+}
+
+.btn img{
+    width: 1.2rem;
+}
+
+
+
+/*   sign    in page */
+
+.container{
+    background: var(--color-white);
+    width: 50rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 2rem 4rem;
+}
+
+.signin_img img{
+    width: 20rem;
+    object-fit: cover;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+form .form_control{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+input:not([type="checkbox"]) {
+    width: 100%;
+    border: 1px solid var(--color_body);
+    padding: 0.7rem;
+    border-radius: 0.5rem;
+}
+
+input::placeholder{
+    color: var(--color_body);
+}
+
+label{
+    font-weight: 500;
+    color: var(--color_black);
+}
+
+.sign_in_extras{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign_in_extras div{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.next_page{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+.next_page a{
+    margin-left: 0.8rem;
+}
+
+.signin_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
