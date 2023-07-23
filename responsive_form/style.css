@@ -97,6 +97,10 @@ a, a:active, a:visited{
     width: 1.2rem;
 }
 
+button:last-child{
+    margin-top: 0.5rem
+}
+
 
 
 /*   sign    in page */
@@ -170,4 +174,49 @@ label{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+
+/* 
+media queries */
+@media screen and (max-width:600px) {
+    body{
+        display:block;
+    }
+    h1{
+        font-size: 1.5rem;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        width: 100vw;
+        overflow: visible;
+    }
+
+    .container{
+        grid-row: 2/3;
+        padding: 2rem 1.5rem;
+    }
+    .sign_in form{
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+
+    .sign_in_extras{
+        flex-direction: column;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+    }
+    .signin_img{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 0;
+    }
+
+    .signin_img div{
+        width: 12rem;
+    }
+
 }
